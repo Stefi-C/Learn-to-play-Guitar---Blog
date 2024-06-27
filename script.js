@@ -9,7 +9,7 @@
    list.forEach((item) =>
    item.addEventListener('click', activeLink));
 
- //highlight scroll menu
+ //highlight scroll menu 
 const sections = document.querySelectorAll ('section');
 window.addEventListener("scroll", () => {
  let current = window.pageYOffset;

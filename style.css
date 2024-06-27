@@ -9,7 +9,7 @@
 --trans-darkgreen:#162c388b;
 --trans-seagreen:#41797378;
 --trans-grey:#c1b2a479;
---trans-white:#f5f2e57c;
+--trans-white:#f5f2e57c;  
 --trans-yellow: #f2d28282;
 
 --button-shadow: 2.4px 2.4px 3.2px  rgba(0,0,0,0.15), 0 0 0  currentColor;
@@ -1199,6 +1199,9 @@ top: 10px;
 }
 }
 @media only screen and (max-width:900px){
+    body{
+        border: 3px solid green;
+    }
     .title h1{
         top: 50px;
     }
@@ -1249,4 +1252,31 @@ top: 10px;
     .history-part1 img{
         opacity: .5;
     }
+    .beneficts{
+        align-items: center;
+        flex-direction: column;
+    }
+    .beneficts p{
+        width: 100%;
+        height: auto;
+    }
+    .f-exp{
+        flex-direction: column;
+    }
+    
+    .last-p{
+        width: 100%;
+        text-align: center;
+    }
+    .end-text{
+        box-shadow: 2px 2px 5px #222;
+    }
+    
+
 }
+@media only screen and (max-width:786px){
+    body{
+        border: 3px solid purple;
+    }
+}
+
