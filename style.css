@@ -87,6 +87,9 @@ width: 24px;
 align-items: center;
 margin: 10px;
 }
+.menu-btn{
+    display: none;
+}
 .menu{
 position: relative;
 top: 35px;
@@ -1128,10 +1131,8 @@ font-size: 13px;
 
 
 /*------------------------mediaQuery--------------------------*/
-@media only screen and (max-width:1200px){
-    body{
-        border: 3px solid red;
-    }
+/*@media only screen and (max-width:1200px){
+  
 .banner-img img{
     opacity: 0.6;
 }
@@ -1197,7 +1198,7 @@ top: 10px;
 .last-p{
     width: 500px;
 }
-}
+}*/
 @media only screen and (max-width:900px){
     body{
         border: 3px solid green;
@@ -1278,5 +1279,27 @@ top: 10px;
     body{
         border: 3px solid purple;
     }
+    .logo h1 a{
+        font-size: 30px;
+    }
+    .menu{
+        position: relative;
+        right: -450px;
+        transition: 0.5s ease-out;
+    }
+    .menu-btn{
+        display: block;
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        right: 5px;
+        border: none;
+        background-color: transparent;
+        margin-bottom: 15px;
+        transition: 0.5s ease-out;
+        cursor: pointer;
+    }
+    
+
 }
 
