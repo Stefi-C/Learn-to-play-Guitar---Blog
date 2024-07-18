@@ -50,7 +50,7 @@ window.addEventListener("scroll", () => {
 
 //menu button
 
-menuBtn = document.querySelector('.menu-btn');
+menuBtn = document.querySelector('#menu-btn');
 menu = document.querySelector('.menu');
 
 menuBtn.addEventListener('click', function(){
@@ -62,5 +62,23 @@ menuBtn.addEventListener('click', function(){
     menu.style.right = "-500px";
     menuBtn.style.right = "5px";
     menuBtn.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"/></svg>'
+  }
+})
+
+//chord/fingers button
+
+chordsBtn = document.querySelector(".chords-btn");
+chords = document.querySelector("#gizmos1");
+fingers = document.querySelector("#gizmos2");
+
+chordsBtn.addEventListener('click', function(){
+  if(chords.style.display == "block"){
+    chords.style.display = "none";
+    fingers.style.display = "block";
+    console.log('chords');
+  }else if(fingers.style.display == "block"){
+    fingers.style.display = "none";
+    chords.style.display = "block";
+    console.log('fingers');
   }
 })

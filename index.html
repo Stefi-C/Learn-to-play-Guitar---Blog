@@ -63,7 +63,7 @@
                     <div class="indicator"></div>
                 </ul>
             </div>
-            <button class="menu-btn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"/></svg></button>
+            <button class="menu-btn" id="menu-btn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"/></svg></button>
         </div>
     </header>   
     <section id="home"> 
@@ -282,18 +282,20 @@
            </div>
 
              <div class="chords">
-                <div class="c-iframe">
-                    <iframe src="https://guitarapp.com/chords/embedtool?labels=fingers&colors=two&theme=light" title="Online Chord Tool" style="width: 360px; height:560px; border-style: none; border-radius: 25%;"></iframe>
+                <div class="c-iframe" id="gizmos1">
+                    <iframe src="https://guitarapp.com/chords/embedtool?labels=fingers&colors=two&theme=light" title="Online Chord Tool" style="width: 360px; height:560px; border-radius: 25%;"></iframe>
                 </div>
-                <div class="c-img">
+                <div class="c-img" id="gizmos2">
                     <img src="/assets/images/left-hand-numbers.jpg" alt="left-hand-numbers">
                 </div>
-             </div>           
+             </div> 
+             <button class="chords-btn">Fingers</button>
+               
             <div class="tools">
                <div class="metronome">
                 <h2>Keep the pace</h2>
                 <p>Metronome</p>
-                <div class="iframe">
+                <div class="iframe" id="gizmos3">
                     <iframe src="https://guitarapp.com/metronome.html?embed=true&tempo=120&timeSignature=2&pattern=1&theme=light" title="Online Metronome" style="width: 360px; height:520px; border-style: none; border-radius: 25%;"></iframe>
                 </div>
                 <!--<p class="link-site">
@@ -303,7 +305,7 @@
                <div class="tuner">
                 <h2>Tune the Sound</h2>
                 <p>Tuner</p>
-                <div class="iframe">
+                <div class="iframe" id="gizmos4">
                     <iframe src="https://guitarapp.com/tuner.html?embed=true&theme=light" allow="microphone" title="GuitarApp Online Tuner" style="width: 360px; height:520px; border-style: none; border-radius: 25%;"></iframe>
                 </div>
                <!----<p class="link-site">

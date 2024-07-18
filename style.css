@@ -1299,7 +1299,78 @@ top: 10px;
         transition: 0.5s ease-out;
         cursor: pointer;
     }
-    
+    .banner-img{
+        opacity: .1;
+    }
+    .intro{
+        border: none;
+        box-shadow: none;
+    }
+    .intro h1{
+       border-bottom: 2px solid black;
+       font-size: 45px;
+       text-align: center;
+       padding-bottom: 0px;
+       margin-bottom: 0px;
+    }
+    .intro p{
+        padding: 20px;
+    }
+    .circular-sb1, .circular-sb2,.circular-sb3,.circular-sb4,.circular-sb5{
+        
+        background: transparent;
+    }
+    .circle3,.circle1,.circle2,.circle4,.circle5,.circle6,.circle7.circle7.circle8{
+        display: none;
+    }
+    .about-intro {
+        display: flex;
+        width: 90%;
+    }
+    .circular-sb2,.circular-sb1{
+       margin-top: 0;
+       width: 100%;
+    }
+    .circular-sb2 p,.circular-sb1 p{
+        left: 5px;
+        font-size: 22px;
+    }
+    .structure{
+        flex-direction: column;
+    }
+    .structure-desc{
+        width: 70vw;
+    }
+    .gizmos{
+        position: relative;
+    }
+    .chords{
+        width: 60vw;
+        height: 75vh;
+        margin: 80px auto;
+    }
+    .chords-btn{
+        border: 2px solid black;
+        margin-top: 10px;
+        padding: 10px 30px 7px 30px;
+        font-size: 20px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 30px;
+    }
+    #gizmos1{
+        position: absolute;
+        margin: 0 10px;
+        left: 150px;
+        display: block;
+    }
+    #gizmos2{
+        position: absolute;
+        margin: 0 10px;
+        left: 150px;
+        display: none;
+    }
 
 }
 
